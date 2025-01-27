@@ -40,6 +40,7 @@ public class SecurityConfig {
             .requestMatchers("/api/login", "/api/getBlogs", "/api/uploadImg", "/api/getBlog/{id}").permitAll()
             // Allow access to static image resources
             .requestMatchers("/images/**").permitAll()
+                .requestMatchers("/rcsquaretech/images/**").permitAll()
             // Allow preflight requests
             .requestMatchers(org.springframework.http.HttpMethod.OPTIONS, "/**").permitAll()
             // Authenticate all other requests
