@@ -77,7 +77,7 @@ public class ImageController {
                 // Generate URL for accessing the uploaded file
 //                String fileUrl = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort()
 //                        + "/images/" + newFileName;
-                String fileUrl =rcsquaretechFilesPath+ newFileName;
+                String fileUrl = rcsquaretechFilesPath + newFileName;
 
                 responseMap.put(newFileName, fileUrl);
             } catch (IOException e) {
